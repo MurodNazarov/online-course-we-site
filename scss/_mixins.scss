@@ -1,0 +1,15 @@
+@mixin container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+@mixin shadow {
+  box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.1);
+}
